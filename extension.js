@@ -37,12 +37,6 @@ function activate(context) {
 
       delay(calculatedDelay).then(() => {
         scrolledLines += linesToScrollPerTick;
-        console.log(scrolledLines, linesToScroll);
-        console.log(
-          typeof linesToScrollPerTick,
-          typeof scrolledLines,
-          typeof linesToScroll
-        );
         scroll(direction, scrolledLines);
       });
     }
